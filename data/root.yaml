@@ -1,0 +1,18 @@
+!exclude includes:
+- !include blackbear.yaml
+- !include brownbear.yaml
+
+population:
+- name: Beth
+  <<: *BlackBear
+  gender: Female
+- name: Gary
+  <<: *BlackBear
+  gender: Male
+- name: Stephen
+  <<: *BrownBear
+  gender: Male
+- name: Stephany
+  <<: *BrownBear
+  gender: Female
+  color: Brown (Graying)

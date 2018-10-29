@@ -1,0 +1,8 @@
+!exclude includes:
+- !include bear_common.yaml
+
+BlackBear: &BlackBear
+  <<: *BearCommon
+  color: black
+  size: small
+  scary: false

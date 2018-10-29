@@ -1,0 +1,8 @@
+bear: &BearCommon
+  kingdom: Animalia
+  phylum: chordata
+  class: mammalia
+  order: carnivora
+  subordia: caniformia
+  superfamily: ursoidea
+  family: Ursidae
