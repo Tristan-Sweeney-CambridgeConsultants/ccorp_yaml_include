@@ -60,7 +60,7 @@ class YAML(ruamel.yaml.YAML):
     def __init__(self, *args, **kwargs):
         if 'typ' not in kwargs:
             kwargs['typ'] = 'safe'
-        elif kwargs['typ'] not in ('safe', 'unsafe'):
+        elif kwargs['typ'] not in ('safe', 'unsafe') and kwargs['typ'] not in (['safe'], ['unsafe']):
             raise Exception("Can't do typ={} parsing w/ composition time directives!".format(kwargs['typ']))
         
         if 'pure' not in kwargs:
